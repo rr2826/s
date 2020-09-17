@@ -1,0 +1,18 @@
+var btnX = 100;
+var btnY = 100;
+var btnWidth = 150;
+var btnHeight = 50;
+
+fill(0, 234, 255);
+rect(btnX, btnY, btnWidth, btnHeight, 5);
+fill(0, 0, 0);
+textSize(19);
+textAlign(LEFT, TOP);
+text("Useless button", btnX+10, btnY+btnHeight/4);
+
+mouseClicked = function() {
+    if (mouseX >= btnX && mouseX <= (btnX+btnWidth) &&
+        mouseY >= btnY && mouseY <= (btnY+btnHeight)) {
+        println("Still pretty useless");    
+    }
+};
